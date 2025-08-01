@@ -7,6 +7,7 @@ namespace WebApplication1.Controllers
     public class CategoriesController : Controller
     {
         ApllicationDbContext context= new ApllicationDbContext();
+        //get all data
         public IActionResult Index()
         {
             var categories=context.Categories.ToList();
